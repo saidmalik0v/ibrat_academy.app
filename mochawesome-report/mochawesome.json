@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-11-06T13:58:15.758Z",
+    "end": "2023-11-06T13:58:15.763Z",
+    "duration": 5,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "43486c08-5ece-408b-abee-34492884d280",
+      "title": "",
+      "fullFile": "/Users/macbookair/Desktop/ibrat.academy/registration.js",
+      "file": "/registration.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0cc558fe-956f-4dee-8b76-5118340238e6",
+          "title": "Ibrat Academy",
+          "fullFile": "/Users/macbookair/Desktop/ibrat.academy/registration.js",
+          "file": "/registration.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Registration with correct data",
+              "fullTitle": "Ibrat Academy Registration with correct data",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const Registration = require('./test/pageobjects/registration.page')\nawait Registration.lang.click()\nawait Registration.nextBtn.click()\nawait Registration.nextBtn1.click()\nawait Registration.nextBtn1.click()\nawait Registration.startBtn.click()\nawait Registration.prflIcon.click()\nawait Registration.loginBtn.click()\nawait Registration.registrBtn.click()\nawait Registration.nameFld.click()\nawait Registration.nameFld.addValue(\"Muhammad\")\nawait Registration.surnameFld.click()\nawait Registration.surnameFld.addValue(\"Saidmalikov\")\nawait Registration.nextBtn1.click()\nawait Registration.pass1Fld.click()\nawait Registration.pass1Fld.addValue(\"muhammad1911\")\nawait Registration.pass2Fld.click()\nawait Registration.pass2Fld.addValue(\"muhammad1911\")\ndriver.touchPerform([ \n{ action: 'press', options: { x: 1330, y: 2830 }},\n{ action: 'release' }\n]);\nawait Registration.nextBtn1.click()\nawait Registration.phoneFld.click()\nawait Registration.phoneFld.addValue(\"94 \"+randomInteger(100, 999)+\" 00 00\")\nawait Registration.nextBtn1.click()\nawait Registration.smsFld.click()\nawait Registration.smsFld.addValue(\"123456\")\n// await Registration.checkBtn.click()\nawait browser.pause(3000)",
+              "err": {
+                "message": "Error: No browser instance registered. Don't import @wdio/globals outside of the WDIO testrunner context. Or you have two two different \"@wdio/globals\" packages installed.",
+                "estack": "Error: No browser instance registered. Don't import @wdio/globals outside of the WDIO testrunner context. Or you have two two different \"@wdio/globals\" packages installed.\n    at $ (node_modules/@wdio/globals/cjs/index.js:36:15)\n    at get lang [as lang] (test/pageobjects/registration.page.js:6:16)\n    at Context.<anonymous> (registration.js:11:28)\n    at process.processImmediate (node:internal/timers:478:21)",
+                "diff": null
+              },
+              "uuid": "884a53bb-bbd9-4135-82b5-e6e18b153dba",
+              "parentUUID": "0cc558fe-956f-4dee-8b76-5118340238e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "884a53bb-bbd9-4135-82b5-e6e18b153dba"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
