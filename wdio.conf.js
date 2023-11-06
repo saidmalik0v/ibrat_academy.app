@@ -23,7 +23,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        '/registration.js'
+        './test/registration.js'
     ],
     // Patterns to exclude.
     exclude: [
